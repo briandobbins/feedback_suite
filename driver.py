@@ -358,7 +358,8 @@ execfile(pathtocontrol)
 
 # modifies CESM namelist
 # currently do not have the flexibility to specify more than one namelist file
-fixnamelist2('user_nl_cam',nlvals,casepath)
+# FIXME: Commented this out for now for testing settings/automatic calling in a 2-deg AQP config (no real injections)
+#fixnamelist2('user_nl_cam',nlvals,casepath)
 
 # populates the namelist
 os.system(casepath+'/preview_namelists --component atm')

@@ -73,18 +73,18 @@
 #   varlocs = The locations of the variables to be extracted.  Examples include
 #     'cam.h0', 'cam.h2', or 'pop.h.nday1'.
 
-runname='b.e21.BW.f09_g17.SSP245-TSMLT-GAUSS-DEFAULT.001'
+runname='b.e21.BW.f09_g17.SSP245-TSMLT-GAUSS-LOWER-0.5.001'
 
-casepath='/glade/work/geostrat/cases/'+runname
+casepath='/home/geostrat/cases/'+runname
 maindir=casepath+'/controller'
-scratchdir='/glade/scratch/geostrat/'+runname+'/allthetemporarystuff/'
+scratchdir='/scratch/geostrat/'+runname+'/allthetemporarystuff/'
 frequency='1y'
 maxrest=1000
 
 pathtocontrol=maindir+'/PIcontrol.py'
 
 variables=['TREFHT']
-archivepaths=len(variables)*['/glade/scratch/geostrat/archive/'+runname+'/atm/hist'] # do NOT include a '/' at the end of each path
+archivepaths=len(variables)*['/scratch/geostrat/archive/'+runname+'/atm/hist'] # do NOT include a '/' at the end of each path
 varlocs=len(variables)*['cam.h0']
 
 ###########################
